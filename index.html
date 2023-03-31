@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Charts</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    </head>
+
+    <body>
+
+        <section id="step1">
+            <header>
+                <ul id="menu">
+                    <li><a href="#step1">Step1</a></li>
+                    <li><a href="#step2">Step2</a></li>
+                    <li><a href="#step3">Step3</a></li>
+                    <li><a href="#step4">Step4</a></li>
+                  
+                </ul>
+            </header>
+           
+        </section>
+        
+        <section id="step2">
+                        <br>
+                        <br>
+                        <br>
+        <h1 class="meadingline">Line chart</h1>
+            
+            </div><canvas id="myChart" style="width: 150%; max-width: 800px"></canvas>
+           
+        </section>
+        <div>
+            <script>
+                const xValues = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020];
+                new Chart('myChart', {
+                    type: 'line',
+                    data: {
+                        labels: xValues,
+                        datasets: [
+                            {
+                                data: [13894163, 15710758, 16854413, 16723019, 17972595, 17686790, 17910320, 18448033, 20351620, 21018395, 18952091],
+                                borderColor: 'orange',
+                                fill: false,
+                                label: 'Year',
+                            },
+                        ],
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [
+                                {
+                                    scaleLabel: {
+                                        display: true,
+                                        labelString: 'Sales',
+                                    },
+                                },
+                            ],
+                            xAxes: [
+                                {
+                                    scaleLabel: {
+                                        display: true,
+                                        labelString: 'Year',
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                });
+            </script>
+        </div>
+        <div>
+            <style>
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                    max-width: 800px;
+                    margin: auto;
+                    font-family: Arial, sans-serif;
+                }
+
+                th,
+                td {
+                    padding: 10px;
+                    text-align: center;
+                    border: 1px solid #0072AA;
+                }
+
+                th {
+                    background-color: #78ADD2;
+                    color: white;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #A4D0A0;
+                }
+
+                tr:nth-child(odd) {
+                    background-color: #21AA47;
+                    color: white;
+                }
+            </style>
+        </div>
+        <section id="step3">
+          
+            <h2 class="stepheadingmain">Tables</h2>
+            <br>
+            <br>
+          
+            <table>
+                <tr>
+                    <th>Year</th>
+                    <th>Sum of Sales (€million)</th>
+                    <th>Sum of Capex (€million)</th>
+                    <th>Sum of Profits (€million)</th>
+                    <th>Sum of Market cap (€million)</th>
+                </tr>
+                <tr>
+                    <td>2010</td>
+                    <td>13894163</td>
+                    <td>764435.7498</td>
+                    <td>-6576872.37</td>
+                    <td>14001791.78</td>
+                </tr>
+                <tr>
+                    <td>2011</td>
+                    <td>15710758</td>
+                    <td>892720.585</td>
+                    <td>1702982.03</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>16854413</td>
+                    <td>1109092.789</td>
+                    <td>1549539.65</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>16723019</td>
+                    <td>1087703.811</td>
+                    <td>1555429.22</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>17972595</td>
+                    <td>1131195.571</td>
+                    <td>1735387.21</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>17686790</td>
+                    <td>1127502.322</td>
+                    <td>1518669.57</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>17910320</td>
+                    <td>1167878.202</td>
+                    <td>1671173.01</td>
+                    <td>23081916.37</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>18448033</td>
+                    <td>1151303.479</td>
+                    <td>1909324.19</td>
+                    <td>24538463.37</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>20351620</td>
+                    <td>1317342.829</td>
+                    <td>2275661.44</td>
+                    <td>27163043.76</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>21018395</td>
+                    <td>1404746.798</td>
+                    <td>2077564.89</td>
+                    <td>27269822.28</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>18952091</td>
+                    <td>1293241.058</td>
+                    <td>1553985.01</td>
+                    <td>33855136.24</td>
+                </tr>
+            </table>
+        </section>
+
+    <section id="step4">
+        
+        
+        <h2 class="barheading">Bar Graph</h2>
+        <html>
+        
+            <head>
+                <script>
+                    
+                    window.onload = function () {
+                               
+                        var chart = new CanvasJS.Chart("chartContainer", {
+                            animationEnabled: true,
+                            theme: "light2", // "light1", "light2", "dark1", "dark2"
+                           
+                            // title: {
+                            //     text: "Bar Graph"
+                            // },
+                            axisY: {
+                                title: "Sum of Sales"
+                            },
+                            data: [{
+                                type: "column",
+                                showInLegend: true,
+                                legendMarkerColor: "grey",
+                                legendText: "Sum of sales",
+                                dataPoints: [
+                                    { y: 300878, label: "Belgium" },
+                                    { y: 266455, label: "Bermuda" },
+                                    { y: 169709, label: "Brazil" },
+                                    { y: 158400, label: "Canada" },
+                                    { y: 142503, label: "Cayman Islands" },
+                                    { y: 101500, label: "China" },
+                                    { y: 97800, label: "Colombia" },
+                                    { y: 80000, label: "RussCzech Republicia" },
+                                     { y: 9412, label: "Denmark" },
+                                      { y: 7552, label: "Finland" },
+                                       { y: 5486, label: "France" },
+                                        { y: 4155, label: "Germany" },
+                                         { y: 7356, label: "Greece" },
+                                          { y: 1566, label: "Hong Kong" },
+                                           { y: 18325, label: "Hungary" }, { y: 8668, label: "Iceland" },
+                                            { y: 57545, label: "India" },
+                                             { y: 50531, label: "Iraq" },
+                                              { y: 18651, label: "Ireland" },
+                                               { y: 16861, label: "Italy" },
+
+                                                { y: 10568, label: "Japan" },
+                                                 { y: 15215, label: "Liechtenstein" },
+                                                  { y: 97800, label: "Liechtenstein" },
+                                ]
+                            }]
+                        });
+                        chart.render();
+
+                    }
+                </script>
+            </head>
+        
+           
+                </script>
+                </head>
+        
+                <body>
+                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                </body>
+        
+        </html>
+    </section>
+    </body>
+
+</html>
