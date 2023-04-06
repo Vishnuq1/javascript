@@ -12,15 +12,16 @@ body {
     font-family: sans-serif;
 }
 
-div,
+/* div,
 section,
 span,
 ul,
 li,
-a,
-header {
+a, */
+
+/* header {
     box-sizing: border-box;
-}
+} */
 
 
 header {
@@ -31,8 +32,13 @@ header {
     align-items: center;
     position: fixed;
     z-index: 999;
+    box-sizing: border-box;
 }
+.dashboard{
+    background-color:#0072AA;
+    justify-content: center;
 
+}
 
 #menu li {
     list-style: none;
@@ -41,11 +47,20 @@ header {
 }
 
 #menu li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 20px;
 }
-
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 23%;
+}
+.assignment h1{
+    
+    color: #0072AA;
+   padding-left: 13%;
+}
 section {
     width: 100%;
     float: left;
@@ -55,18 +70,19 @@ section {
 }
 
 #step2 {
-    background-color: #fff;
+    /* background-color: #fff; */
     align-items: center;
     justify-content: center;
 
 }
 .meadingline{
     justify-content: center;
+    color: #0072AA;
 }
 #myChart{
-    margin-top: 35px;
+    margin-top: 55px;
     
-    padding-left: 15%;
+    padding-left: 20%;
    
 }
 #step3 {
@@ -75,9 +91,10 @@ section {
 }
 
 .stepheadingmain{
-    margin-top:85px;
+    margin-top:95px;
     display: flex;
     justify-content: center;
+    color: #0072AA;
 }
 h1 {
     position: absolute;
@@ -90,7 +107,21 @@ h1 {
 
 
 .barheading{
-    margin-top: 95px;
+    margin-top: 115px;
     display: flex;
     justify-content: center;
+    color: #0072AA;
 }
+.bargraph{
+    /* margin-top: 55%; */
+    padding-top: 55px;
+}
+.modelheading{
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+    color: #0072AA;
+}
+
+
+
