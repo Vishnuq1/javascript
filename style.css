@@ -12,16 +12,6 @@ body {
     font-family: sans-serif;
 }
 
-/* div,
-section,
-span,
-ul,
-li,
-a, */
-
-/* header {
-    box-sizing: border-box;
-} */
 
 
 header {
@@ -70,24 +60,37 @@ section {
 }
 
 #step2 {
-    /* background-color: #fff; */
+    
+  
+    background-image: url(/world.jpg);
+}
+#myChart{
+    opacity: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
+    transition-timing-function: ease;
+    margin-left: 17%;
+    margin-top: 5%;
+}
+#myChart:hover{
+transform: scale(1.1);
+transition: smooth;
+opacity:135;
+background-color: #fff;
+
 
 }
 .meadingline{
     justify-content: center;
     color: #0072AA;
 }
-#myChart{
-    margin-top: 55px;
-    
-    padding-left: 20%;
-   
-}
+
+
 #step3 {
     background-color: #fff;
     margin-top: 80px;
+    background-image: url(/world.jpg);
 }
 
 .stepheadingmain{
@@ -95,6 +98,13 @@ section {
     display: flex;
     justify-content: center;
     color: #0072AA;
+}
+.tablemain{
+    opacity: 0;
+}
+.tablemain:hover{
+    opacity:35;
+    transition-timing-function: ease;
 }
 h1 {
     position: absolute;
@@ -105,23 +115,38 @@ h1 {
     color: black;
 }
 
-
+#step4{
+    background-image: url(/world.jpg);
+    
+}
 .barheading{
     margin-top: 115px;
     display: flex;
     justify-content: center;
     color: #0072AA;
+    
 }
-.bargraph{
-    /* margin-top: 55%; */
-    padding-top: 55px;
+#chartContainer{
+    opacity: 0;
+}
+#chartContainer:hover{
+    opacity:35;
+}
+
+#step5{
+    background-image: url(/world.jpg);
 }
 .modelheading{
     display: flex;
     justify-content: center;
-    margin-top: 12%;
+    margin-top: 11%;
     color: #0072AA;
 }
 
-
-
+#container{
+    opacity: 0;
+   
+}
+#container:hover{
+    opacity: 35;
+}
