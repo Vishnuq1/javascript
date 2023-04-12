@@ -35,16 +35,11 @@
                         <br>
                         <br>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-        <!-- This is a HTML script tag that references an external JavaScript library called "Chart.js" from the content delivery
-        network (CDN) called "cdnjs".
-        
-        Chart.js is a popular open-source JavaScript library for creating interactive and customizable charts and graphs on a
-        web page. It uses HTML5's canvas element to render the charts and provides various chart types such as line, bar, pie,
-        doughnut, radar, and more. -->
+       
         
             <h1 class="meadingline">Line chart</h1>
-           <canvas id="myChart" style="width: 150%; max-width: 800px "></canvas>
-        <!-- canvas to element that is used to create graphics and interactive visualizations on a web page. -->
+           <canvas id="myChart" style="max-width: 800px"></canvas>
+         
 
         </section>
         <div>
@@ -227,17 +222,8 @@
                 <script>
                    
                     window.onload = function () {
-                            //    onload is most often used within the < body > element to execute a script once a web page has completely loaded all content(including images, script files, CSS files, etc.).
-                            
-
-                        var chart = new CanvasJS.Chart("chartContainer", {
-                            // animationEnabled: true,
-                            // window.onload is an event that is fired when the entire HTML page and all its resources(such as images, scripts, and stylesheets) have finished loading.It is often used to ensure that all the elements on the page are loaded before any JavaScript code is executed, to avoid errors or unexpected behavior.
+                       var chart = new CanvasJS.Chart("chartContainer", {
                             theme: "light2", 
-                           
-                            // title: {
-                            //     text: "Bar Graph"
-                            // },
                             axisY: {
                                 title: "Sum of Sales"
                             },
@@ -324,7 +310,7 @@
         
         
             <head>
-                <!-- <title> 3D Column Chart</title> -->
+                
                 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
                 <script src="https://code.highcharts.com/highcharts.js"></script>
                 <script src="https://code.highcharts.com/highcharts-3d.js"></script>
